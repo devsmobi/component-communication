@@ -1,4 +1,4 @@
-# component-communication
+# VueJs Components Communication
 
 > A simple app to show how parent-child communication within Vuejs app takes place.
 
@@ -9,10 +9,14 @@
 npm install
 
 # serve with hot reload at localhost:8080
-npm run dev
+npm run dev --watch
 
 # build for production with minification
 npm run build
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Progress
+
+## The Big Picture
+![Screenshot 1](https://github.com/lawrence615/component-communication/blob/master/big-picture.png)
+
