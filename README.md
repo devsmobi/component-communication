@@ -26,7 +26,7 @@ The progress has been tagged and you can switch between the "versions".
    - Added components 
      - Created components folder and added 3 components.
    - Implemented Parent-Child communication. 
-     - Passing message from Parent component to Child 1, Child 2 and Child 3
+     - Passing message from Parent component to ChildOne, ChildTwo and ChildThree
      - Dynamically changing message in Child 2 from parent
  * v1.0.2
     - Implemented Child-Parent communication
