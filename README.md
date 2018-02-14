@@ -17,7 +17,6 @@ npm run build
 
 ## Progress
 This is a breakdown of progress from the initial commit to attaining the goal of this tutorial. 
-
 The progress has been tagged and you can switch between the "versions".
 
 * v1.0.0
