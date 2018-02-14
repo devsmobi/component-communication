@@ -4,10 +4,14 @@
             <div class="row">
                 <div class="col-md-12">
                     <h2 class="title">{{ msg }}</h2>
+                    <br>
+                    <br>
+                    <h4>Message from Child 1:{{ something }}</h4>
                 </div>
                 <!--<div class="row">-->
                 <div class="col-md-6">
-                    <child-one message="Message to child 1"></child-one>
+                    <!--<child-one message="Message to child 1" @somethingSent="updateSomething($event)"></child-one>-->
+                    <child-one message="Message to child 1" @somethingSent="something = $event"></child-one>
                 </div>
                 <div class="col-md-6">
                     <child-two :second-message=messageTwo third-message="Message to Child 3"></child-two>
@@ -15,9 +19,11 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <p>Another Child</p>
-        </div>
+        <!--<div class="row">-->
+        <!--<div class="col-md-12">-->
+        <!--<h2 class="title">Child 4</h2>-->
+        <!--</div>-->
+        <!--</div>-->
     </div>
 </template>
 
@@ -34,7 +40,13 @@
         data () {
             return {
                 msg: 'Parent',
+                something: '',
                 messageTwo: 'Message to child 2'
+            }
+        },
+        methods: {
+            updateSomething: function ($event) {
+                this.something = $event
             }
         }
     }
@@ -46,7 +58,7 @@
     }
 
     #parent {
-        height: 430px;
+        height: 550px;
         background-color: red;
         border: 3px solid black;
         margin-bottom: 2px;
